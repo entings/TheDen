@@ -19,6 +19,7 @@
     - Zombie
     - Revolutionary
     - Changeling
+    - DuctSpider # Imp
 
 - type: npcFaction
   id: Penguin
@@ -46,3 +47,9 @@
   - Changeling
   - Dino
   - Penguin
+  - DuctSpider # Imp
+
+- type: npcFaction # Imp
+  id: DuctSpider
+  hostile:
+  - Mouse

@@ -51,6 +51,7 @@
   id: Mouse
   hostile:
     - PetsNT
+    - DuctSpider # Imp
 
 - type: npcFaction
   id: Passive
@@ -63,6 +64,7 @@
     - Zombie
     - Xeno
     - LordsOfTheEndTime # Den
+    - DuctSpider # Imp
 
 - type: npcFaction
   id: SimpleHostile
@@ -117,6 +119,7 @@
     - SAN
     - Changeling
     - LordsOfTheEndTime # Den
+    - DuctSpider # Imp
 
 - type: npcFaction
   id: Zombie
@@ -135,6 +138,7 @@
     - GladiabotYellow
     - SAN
     - Changeling
+    - DuctSpider # Imp
 
 - type: npcFaction
   id: Revolutionary
@@ -258,6 +262,7 @@
   - Zombie
   - Revolutionary
   - Changeling # goob edit - changelings
+  - DuctSpider # Imp
 # Commented out until we add theses factions into EE
 #  - Heretic # goob edit - heretics
 #  - Blob # Goobstation - Blob

@@ -1,0 +1,12 @@
+- type: entity
+  id: DuctSpiderMigration
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    weight: 4
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobDuctSpider
+      weight: 1

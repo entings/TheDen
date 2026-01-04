@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: LivestockDuctSpider
+  icon:
+    sprite: _Impstation/Mobs/Animals/ductspider.rsi
+    state: idle
+  product: CrateNPCDuctSpider
+  cost: 5000
+  category: cargoproduct-category-name-livestock
+  group: market
