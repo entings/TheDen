@@ -68,6 +68,37 @@ public sealed class SpiderSystem : SharedSpiderSystem
             _popup.PopupEntity(Loc.GetString("spider-web-action-fail"), args.Performer, args.Performer);
     }
 
+    private bool SpawnWeb(Entity<SpiderComponent> ent, EntityCoordinates coords)
+    {
+        var result = false;
+
+        // Spawn web in center
+        if (!IsTileBlockedByWeb(coords))
+        {
+            Spawn(ent.Comp.WebPrototype, coords);
+            result = true;
+        }
+
+        // Imp addition, return early if you're only supposed to spawn one web
+        if (ent.Comp.SpawnOneWeb)
+            return result;
+
+        // Spawn web in other directions
+        for (var i = 0; i < 4; i++)
+        {
+            var direction = (DirectionFlag)(1 << i);
+            var outerSpawnCoordinates = coords.Offset(direction.AsDir().ToVec());
+
+            if (IsTileBlockedByWeb(outerSpawnCoordinates))
+                continue;
+
+            Spawn(ent.Comp.WebPrototype, outerSpawnCoordinates);
+            result = true;
+        }
+
+        return result;
+    }
+
     private bool IsTileBlockedByWeb(EntityCoordinates coords)
     {
         foreach (var entity in coords.GetEntitiesInTile())
