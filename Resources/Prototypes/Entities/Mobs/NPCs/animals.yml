@@ -2593,7 +2593,7 @@
       amount: 2
   - type: CombatMode
   - type: Body
-    prototype: AnimalHemocyanin
+    prototype: AnimalHemocyaninSpider
   - type: MobThresholds
     thresholds:
       0: Alive

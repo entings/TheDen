@@ -1,12 +1,16 @@
 - type: entity
   id: DuctSpiderMigration
-  parent: BaseStationEventShortDelay
+  parent: BaseVentCritterSpawn # Den edit
+  categories: [ HideSpawnMenu ] # Den add
   components:
   - type: StationEvent
+    startAnnouncement: true
+    startDelay: 10
     earliestStart: 20
     weight: 4
     duration: 60
   - type: VentCrittersRule
-    entries:
-    - id: MobDuctSpider
-      weight: 1
+    table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
+      children:
+      - id: MobDuctSpider
+        weight: 1

@@ -57,7 +57,7 @@
     slots:
     - HEAD
   - type: CanEscapeInventory
-  - type: PleebnarGibbable
+#  - type: PleebnarGibbable
   - type: NpcFactionMember
     factions:
     - DuctSpider
@@ -73,8 +73,8 @@
     damage:
       types:
         Piercing: 1
-  - type: VentCrawler
-    enterDelay: 1
+#  - type: VentCrawler
+#    enterDelay: 1
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -100,7 +100,7 @@
     baseSprintSpeed: 4
   - type: Speech
     audioParams:
-      pitch: 2
+      pitch: 1.5
   - type: Vocal
     sounds:
       Male: ArachnidSmall
@@ -111,9 +111,9 @@
     - Trash
     - CannotSuicide
     - VimPilot
-    - MultitoolDefibrillatorTarget
+#    - MultitoolDefibrillatorTarget
     - FootstepSound
-    - SpiderCraft # specifically for admemes. shouldn't be able to craft anything in normal gameplay
+#    - SpiderCraft # specifically for admemes. shouldn't be able to craft anything in normal gameplay
     - DoorBumpOpener
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
@@ -130,8 +130,8 @@
           Quantity: 5
         - ReagentId: Fat
           Quantity: 5
-        - ReagentId: Mechanotoxin
-          Quantity: 5
+#        - ReagentId: Mechanotoxin
+#          Quantity: 5
   - type: Strippable
   - type: UserInterface
     interfaces:
@@ -146,9 +146,10 @@
     - reagents: [ Water ]
       methods: [ Touch ]
       effects:
-      - !type:SpawnEntityInInventory
+      - !type:WearableReaction  # Den edit for functionality
         slot: head
-        entity: WaterDropletHat
-  - type: Edible
+        prototypeID: WaterDropletHat
   - type: Appearance
   - type: IgnoreSpiderWeb
+  - type: BloodSucker # Den addition
+    webRequired: true

@@ -49,7 +49,6 @@
         variation: 0.1
 
 - type: emoteSounds
-  parent: UnisexArachnid
   id: ArachnidSmall
   params:
     pitch: 1.5
@@ -60,3 +59,23 @@
       params:
         volume: -3
         variation: 0.1
+    Scream:
+      path: /Audio/Voice/Arachnid/arachnid_scream.ogg
+    Laugh:
+      path: /Audio/Voice/Arachnid/arachnid_laugh.ogg
+    Chitter:
+      path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
+    Click:
+      path: /Audio/Voice/Arachnid/arachnid_click.ogg
+    Hiss: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_hiss.ogg
+    Cough: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_cough.ogg
+    Yawn: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_yawn.ogg
+    Sigh: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_sigh.ogg
+    Crying: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_cry.ogg
+    Gasp: #imp
+      path: /Audio/_Impstation/Voice/Arachnid/arachnid_gasp.ogg
