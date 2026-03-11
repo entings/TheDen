@@ -553,7 +553,6 @@
       amount: 1
   products:
     AngelsKiss: 3
-    CottonBool: 2
 
 - type: reaction
   id: PinkRose
