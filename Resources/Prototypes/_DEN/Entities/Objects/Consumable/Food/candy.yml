@@ -40,6 +40,36 @@
         yellow: ""
 
 - type: entity
+  parent: FoodSnackWeedGummy
+  name: weed gummy
+  description: Finally.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: THC
+          Quantity: 2
+        - ReagentId: Sugar
+          Quantity: 3
+
+- type: entity
+  parent: FoodSnackHaloGummy
+  name: halo gummy
+  description: The cure for what ails you.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Haloperidol
+          Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 2
+
+- type: entity
   parent: FoodSnackBase
   id: FoodSnackGummyWormLarge
   name: giant gummy worm

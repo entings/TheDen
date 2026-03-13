@@ -53,6 +53,32 @@
 
 - type: entity
   parent: CandyBagBase
+  id: CandyBagWeedGummy
+  name: bulk weed gummy bag
+  description: A bag of weed gummies. They don't taste very good, but that's not really the point, is it?
+  components:
+  - type: Sprite
+    state: gummy_bear
+  - type: StorageFill
+    contents:
+    - id: FoodSnackWeedGummy
+      amount: 18
+
+- type: entity
+  parent: CandyBagBase
+  id: CandyBagHaloGummy
+  name: bulk halo gummy bag
+  description: A bag of halo gummies. Eat a big handful. See what happens.
+  components:
+  - type: Sprite
+    state: gummy_bear
+  - type: StorageFill
+    contents:
+    - id: FoodSnackHaloGummy
+      amount: 18
+
+- type: entity
+  parent: CandyBagBase
   id: CandyBagLollipop
   name: bulk lollipop bag
   description: A bag of lollipops in various flavors.
