@@ -40,7 +40,8 @@
         yellow: ""
 
 - type: entity
-  parent: FoodSnackWeedGummy
+  parent: FoodSnackGummyBear
+  id: FoodSnackWeedGummy
   name: weed gummy
   description: Finally.
   components:
@@ -50,12 +51,13 @@
         maxVol: 5
         reagents:
         - ReagentId: THC
-          Quantity: 2
-        - ReagentId: Sugar
           Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 2
 
 - type: entity
-  parent: FoodSnackHaloGummy
+  parent: FoodSnackGummyBear
+  id: FoodSnackHaloGummy
   name: halo gummy
   description: The cure for what ails you.
   components:
