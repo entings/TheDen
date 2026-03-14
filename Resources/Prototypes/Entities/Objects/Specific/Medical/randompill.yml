@@ -33,11 +33,13 @@
   - quantity: 20
     weight: 3
     reagents:
+    - Carpetium
     - ChloralHydrate
     - Desoxyephedrine
     - Ephedrine
     - Fresium
     - Ipecac
+    - JuiceThatMakesYouWeh
     - Mold
     - MuteToxin
     - Nocturine
@@ -52,10 +54,12 @@
     - SodiumPolyacrylate
     - VentCrud
   - quantity: 10
-    weight: 3
+    weight: 2
     reagents:
+    - BuzzochloricBees
     - Happiness
     - HeartbreakerToxin
+    - Razorium
   - quantity: 5
     weight: 2
     reagents:
